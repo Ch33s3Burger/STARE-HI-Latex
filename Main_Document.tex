@@ -1,0 +1,51 @@
+\documentclass[a4paper, 11pt]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{authblk}
+\usepackage{multirow}
+
+
+\DeclareUnicodeCharacter{2009}{\,} 
+\graphicspath{ {./graphics/} }
+\bibliographystyle{unsrt}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{2}
+
+\title{Here stands the title}
+\author[1]{First Authors Name}
+\affil[1]{Workplace of first Author}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+
+
+\input{Abstract}
+\input{Keywords}
+\input{Introduction/Introduction}
+\input{Study_context/Study_context}
+\input{Methods/Methods}
+\input{Results/Results}
+\input{Discussion/Discussion}
+\input{Conclusion}
+\input{Authors_contribution}
+\input{Competing_interests}
+\input{Acknowledgment}
+
+\chapter{References}
+\bibliography{BibTex.bib}
+
+\chapter{Appendices}
+
+
+\end{document}
